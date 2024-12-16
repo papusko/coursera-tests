@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="firstMission">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment 1</h1>
+    <div ng-controller="firstMissionController">
+        <label>Enter your breakfast:</label>
+        <input type="text" ng-model="command">
+        <button type="submit" ng-click="checkByCommandLength()">Check If Too Much</button>
+        <p style="color: red;">(I do NOT consider an element empty)</p>
+        <p>{{message}}</p>
+    </div>
+</body>
+</html>
